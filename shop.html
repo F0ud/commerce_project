@@ -4,7 +4,153 @@
         <meta charset="UTF-8">
         <title>Online Commerce</title>
         <style>
-            
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            header {
+                background-color: #333;
+                color: white;
+                padding: 1rem;
+                text-align: center;
+            }
+            nav ul {
+                list-style: none;
+                padding: 0;
+            }
+            nav ul li {
+                display: inline;
+                margin: 0 1rem;
+            }
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+            }
+            section {
+                padding: 2rem;
+                text-align: center;
+            }
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .card {
+                background: #333;
+                margin: 1rem;
+                padding: 1rem;
+                border-radius: 8px;
+                width: calc(33% - 2rem);
+                box-sizing: border-box;
+            }
+            .card img {
+                max-width: 100%;
+                border-radius: 8px;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            form input, form button {
+                padding: 0.5rem;
+                margin: 0.5rem 0;
+                width: 80%;
+                max-width: 300px;
+            }
+            footer {
+                background-color: #333;
+                color: white;
+                padding: 1rem;
+                text-align: center;
+            }
+            @media (max-width: 768px) {
+                .card {
+                    width: calc(50% - 2rem);
+                }
+            }
+            @media (max-width: 480px) {
+                .card {
+                    width: calc(100% - 2rem);
+                }
+            }
         </style>
     </head>
+    <body>
+        <header>
+            <h1>Electronic Commerce</h1>
+            <nav>
+                <ul>
+                    <li><a href="#featured-items">Featured</a></li>
+                    <li><a href="#specials">Special Offers</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>
+                    <li><a href="#newsletters">News</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="featured-items">
+            <h2>Featured!</h2>
+            <div class="container">
+                <div class="card">
+                    <img src="img1.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>This is the description</p>
+                </div>
+                <div class="card">
+                    <img src="img1.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>This is the description</p>
+                </div>
+                <div class="card">
+                    <img src="img1.jpg" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>This is the description</p>
+                </div>
+            </div>
+        </section>
+        <section id="special-offers">
+            <h2>Special Offers</h2>
+            <div class = "container">
+                <div class ="card">
+                    <img src="img1.jpg" alt="Special 1">
+                    <h3>Special 1</h3>
+                    <p>Description</p>
+                </div>
+                <div class ="card">
+                    <img src="img1.jpg" alt="Special 2">
+                    <h3>Special 2</h3>
+                    <p>Description</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonial">
+            <h2>Customer Reviews</h2>
+            <div class="container">
+                <div class="card">
+                    <p>Comment #1</p>
+                    <p>- Customer 1</p>
+                </div>
+                <div class="card">
+                    <p>Comment #1</p>
+                    <p>- Customer 2</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter">
+            <h2>Please Subscribe to the Newsletter for Updates</h2>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Commerce for Fashion</p>
+        </footer>
+    </body>
 </html>
